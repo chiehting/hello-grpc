@@ -14,6 +14,7 @@ Thumbs.db
 *.rar
 *.tar
 *.zip
+vendor
 
 # Compiled source
 *.com
