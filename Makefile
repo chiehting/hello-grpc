@@ -5,9 +5,9 @@ DOCKERDIR:=./build
 help: ## Format and display the manual pages
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST)|awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
 
-.PHONY: 
-protoc: pb/hello.proto ## Generate protoc file 
-	protoc --go_out=plugins=grpc:pb pb/hello.proto
+.PHONY:
+protoc: protobuf/hello.proto ## Generate protoc file
+	protoc --go_out=plugins=grpc:protobuf protobuf/hello.proto
 
 .PHONY: build
 build: ## Build server/client services.

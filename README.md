@@ -25,4 +25,4 @@ make build
 
 ### Run
 
-![demo](http://images.chiehting.com/github/hello-grpc-1.png)
+![demo](https://storage.googleapis.com/chiehting.com/github/hello-grpc-1.png)
